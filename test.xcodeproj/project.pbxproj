@@ -24,6 +24,7 @@
 		18AF82BE1C0599D800510CE6 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF82BB1C0599D800510CE6 /* ParallaxHeaderView.m */; };
 		18AF82BF1C0599D800510CE6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF82BD1C0599D800510CE6 /* UIImage+ImageEffects.m */; };
 		18AF82C21C059C8400510CE6 /* MyTopImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF82C11C059C8400510CE6 /* MyTopImageView.m */; };
+		18F91CAA1C4CE40400F36A7B /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F91CA91C4CE40400F36A7B /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		18AF82BD1C0599D800510CE6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		18AF82C01C059C8400510CE6 /* MyTopImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTopImageView.h; sourceTree = "<group>"; };
 		18AF82C11C059C8400510CE6 /* MyTopImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTopImageView.m; sourceTree = "<group>"; };
+		18F91CA81C4CE40400F36A7B /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		18F91CA91C4CE40400F36A7B /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 		18AF82851C05988800510CE6 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				18F91CA71C4CE40400F36A7B /* Color+Hex */,
 				185EC9311C085E10008C9110 /* CreateButtonView.h */,
 				185EC9321C085E10008C9110 /* CreateButtonView.m */,
 				181D838A1C070CDE002DE6C5 /* 屌丝逆袭Dream.png */,
@@ -187,6 +191,15 @@
 				18AF82BD1C0599D800510CE6 /* UIImage+ImageEffects.m */,
 			);
 			path = ParallaxTableViewHeader;
+			sourceTree = "<group>";
+		};
+		18F91CA71C4CE40400F36A7B /* Color+Hex */ = {
+			isa = PBXGroup;
+			children = (
+				18F91CA81C4CE40400F36A7B /* UIColor+Hex.h */,
+				18F91CA91C4CE40400F36A7B /* UIColor+Hex.m */,
+			);
+			path = "Color+Hex";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185EC9331C085E10008C9110 /* CreateButtonView.m in Sources */,
+				18F91CAA1C4CE40400F36A7B /* UIColor+Hex.m in Sources */,
 				181D83891C070871002DE6C5 /* UIImage+Effects.m in Sources */,
 				18AF82BE1C0599D800510CE6 /* ParallaxHeaderView.m in Sources */,
 				18AF82BF1C0599D800510CE6 /* UIImage+ImageEffects.m in Sources */,

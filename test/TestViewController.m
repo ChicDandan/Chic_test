@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "UIColor+Hex.h"
 
 @interface TestViewController ()
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"00bcd4" alpha:0.6];
     
     self.aView.hidden = YES;
 //    UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -49,7 +50,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-//    [self test];
+    [self test];
 }
 
 
