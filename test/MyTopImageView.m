@@ -38,7 +38,7 @@
 {
     if (!_button) {
         self.button = [UIButton buttonWithType:UIButtonTypeSystem];
-        _button.frame = CGRectMake((CGRectGetWidth(self.frame) - KButton_Size) / 2, (CGRectGetHeight(self.frame) - KButton_Size) / 5, KButton_Size, KButton_Size);
+        _button.frame = CGRectMake((CGRectGetWidth(self.frame) - KButton_Size) / 2, (CGRectGetHeight(self.frame) - KButton_Size) / 2, KButton_Size, KButton_Size);
         _button.layer.masksToBounds = YES;
         _button.layer.cornerRadius = KButton_Size / 2;
         [_button addTarget:self action:@selector(doClick:) forControlEvents:UIControlEventTouchUpInside];

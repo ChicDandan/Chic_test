@@ -81,6 +81,8 @@
         self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         [_tableView setTableHeaderView:self.topView];
         _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.allowsSelection = NO;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
@@ -92,6 +94,7 @@
     if (!_topImageView) {
         self.topImageView = [[MyTopImageView alloc] initWithFrame:CGRectMake(0, 0, KScreen_Rect.size.width,  KTopImageView_Height)];
         _topImageView.image = [[UIImage imageNamed:@"imageMe"] applyBlurWithRadius:20.f tintColor:[UIColor colorWithWhite:0.f alpha:0.f] saturationDeltaFactor:1.4 maskImage:nil];
+        [_topImageView.button setBackgroundImage:[UIImage imageNamed:@"屌丝逆袭Dream.png"] forState:UIControlStateNormal];
         _topImageView.delegate = self;
     }
     return _topImageView;
@@ -127,8 +130,15 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    cell.textLabel.textColor = [UIColor colorWithRed:arc4random() % 256 / 255.0 green:arc4random() % 256 / 255.0 blue:arc4random() % 256 / 255.0 alpha:1.0];
+    cell.textLabel.text = [NSString stringWithFormat:@"%u",arc4random() % 1000 + 10000];
     cell.backgroundColor = [UIColor colorWithRed:arc4random() % 256 / 255.0 green:arc4random() % 256 / 255.0 blue:arc4random() % 256 / 255.0 alpha:1.0];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 
 #pragma mark scrollViewDelegate
