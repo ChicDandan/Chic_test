@@ -38,38 +38,38 @@
     self.view.backgroundColor = RGB_COLOR(236, 236, 239, 1.0);
     
     
-    [self.view addSubview:self.tableView];
+//    [self.view addSubview:self.tableView];
     
-//    [self addView];
+    [self addView];
 }
 
 - (void)addView
 {
-//    NSArray * buttonArray = [NSArray arrayWithObjects:@"大叔",@"潮男",@"英伦",@"学院",@"型男",@"儒雅",@"复古", nil];
-//    CreateButtonView * aView = [[CreateButtonView alloc] initWithFrame:CGRectMake(35, 120, 260, 80)];
-//    aView.backgroundColor = [UIColor redColor];
-//    [aView addButtonBy:buttonArray count:5 backgroundcolor:[UIColor greenColor] font:[UIFont systemFontOfSize:13.f] titleColor:[UIColor whiteColor]];
-//    [self.view addSubview:aView];
+    NSArray * buttonArray = [NSArray arrayWithObjects:@"大叔",@"潮男",@"英伦",@"学院",@"型男",@"儒雅",@"复古", nil];
+    CreateButtonView * aView = [[CreateButtonView alloc] initWithFrame:CGRectMake(35, 120, 260, 80)];
+    aView.backgroundColor = [UIColor redColor];
+    [aView addButtonBy:buttonArray count:5 backgroundcolor:[UIColor greenColor] font:[UIFont systemFontOfSize:13.f] titleColor:[UIColor whiteColor]];
+    [self.view addSubview:aView];
     
-//    UILabel * aLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 280, 100, 50)];
-//    aLabel.backgroundColor = [UIColor whiteColor];
-////    aLabel.borderStyle = UITextBorderStyleLine;
-//    aLabel.layer.borderWidth= 1.0f;
-//    aLabel.layer.borderColor=[[UIColor orangeColor] CGColor];
-//    //    aLabel.numberOfLines = 0;
-//    aLabel.text = @"college";
-//    [self.view addSubview:aLabel];
+    UILabel * aLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 280, 100, 50)];
+    aLabel.backgroundColor = [UIColor whiteColor];
+//    aLabel.borderStyle = UITextBorderStyleLine;
+    aLabel.layer.borderWidth= 1.0f;
+    aLabel.layer.borderColor=[[UIColor orangeColor] CGColor];
+    //    aLabel.numberOfLines = 0;
+    aLabel.text = @"college";
+    [self.view addSubview:aLabel];
     
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(60, 100, 120, 60);
-    [button setImage:[UIImage imageNamed:@"屌丝逆袭Dream.png"] forState:UIControlStateNormal];
-    [button setTitle:@"nihao" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-//    button.backgroundColor = [UIColor orangeColor];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    button.titleEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 10);
-    button.imageEdgeInsets = UIEdgeInsetsMake(30, 30, 15, 30);
-        
+//    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(60, 100, 120, 60);
+//    [button setImage:[UIImage imageNamed:@"屌丝逆袭Dream.png"] forState:UIControlStateNormal];
+//    [button setTitle:@"nihao" forState:UIControlStateNormal];
+//    [self.view addSubview:button];
+////    button.backgroundColor = [UIColor orangeColor];
+//    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    button.titleEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 10);
+//    button.imageEdgeInsets = UIEdgeInsetsMake(30, 30, 15, 30);
+    
     
     
     
